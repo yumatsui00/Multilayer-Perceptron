@@ -14,7 +14,7 @@ def print_all_data(data):
 
 
 if __name__ == "__main__":
-    data = pd.read_csv("data.csv")
+    data = pd.read_csv("./data/data.csv")
     num_columns = data.shape[1]
     column_names = ["ID", "Diagnosis"] + [f"{stat}_{feature}" for stat in ["Mean", "Std", "Max"] for feature in [
     "Radius", "Texture", "Perimeter", "Area", "Smoothness",
