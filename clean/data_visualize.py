@@ -1,15 +1,11 @@
 import pandas as pd
 
-
-
-
-
-
 def print_all_data(data):
+    """visualize data
+    """
     pd.set_option('display.max_rows', None)                  #行の省略をなくす
     pd.set_option('display.max_columns', None)               #列の省略をなくす
     pd.set_option('display.expand_frame_repr', None)         #横長の出力の省略をなくす
-    #print(data)
     print(data.describe())
 
 
